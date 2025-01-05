@@ -1,4 +1,40 @@
-# [Lonely Numbers](https://codeforces.com/problemset/problem/1424/J)
+---
+title: Problem - 1424J - Codeforces
+source: https://codeforces.com/problemset/problem/1424/J
+tags:
+  - 算法题/题型/数论/质因子分解
+  - 算法题/题型/数论/素数
+  - 算法题/题型/前缀和 
+---
+
+## 题目描述
+In number world, two different numbers are friends if they have a lot in common, but also each one has unique perks.
+
+More precisely, two different numbers $a$ and $b$ are friends if $g c d \left(\right. a , b \left.\right)$, $\frac{a}{g c d \left(\right. a , b \left.\right)}$, $\frac{b}{g c d \left(\right. a , b \left.\right)}$ can form sides of a triangle.
+
+Three numbers $a$, $b$ and $c$ can form sides of a triangle if $a + b > c$, $b + c > a$ and $c + a > b$.
+
+In a group of numbers, a number is lonely if it doesn't have any friends in that group.
+
+Given a group of numbers containing all numbers from $1 , 2 , 3 , . . . , n$, how many numbers in that group are lonely?
+
+Input
+
+The first line contains a single integer $t$ $\left(\right. 1 \leq t \leq \left(10\right)^{6} \left.\right)$ - number of test cases.
+
+On next line there are $t$ numbers, $n_{i}$ $\left(\right. 1 \leq n_{i} \leq \left(10\right)^{6} \left.\right)$ - meaning that in case $i$ you should solve for numbers $1 , 2 , 3 , . . . , n_{i}$.
+
+Output
+
+For each test case, print the answer on separate lines: number of lonely numbers in group $1 , 2 , 3 , . . . , n_{i}$.
+
+Note
+
+For first test case, $1$ is the only number and therefore lonely.
+
+For second test case where $n = 5$, numbers $1$, $3$ and $5$ are lonely.
+
+For third test case where $n = 10$, numbers $1$, $5$ and $7$ are lonely.
 
 ## 题解
 先用几个案例寻找规律：
