@@ -71,7 +71,7 @@ int main() {
     priority_queue<int, vector<int>, greater<>> p;
     for (auto value : weight) p.push(value.second);
     int ans = 0;
-    if (p.size() == 1) ans += p.size();  // 注意特殊情况
+    if (p.size() == 1) ans += str.size();  // 注意特殊情况
     while (p.size() > 1) {
       int num1 = p.top();
       p.pop();
